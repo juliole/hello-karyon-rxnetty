@@ -11,17 +11,17 @@ task wrapper(type: Wrapper) {
 
 repositories { 
     mavenCentral()
-        maven  {
-        url "http://repo1.maven.org/maven2"
-    }
-        //jcenter()
-        jcenter {
-            url "http://jcenter.bintray.com/" 
-        }
+
+    jcenter()
+
 }
 
 buildscript {
     repositories {
+        jcenter {
+            url "http://jcenter.bintray.com/" 
+        }
+    
         maven {
             url "https://plugins.gradle.org/m2/"
         }
